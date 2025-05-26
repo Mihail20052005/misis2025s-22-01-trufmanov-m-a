@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+project(misis2025s-3-trufmanov-m-a)
+add_subdirectory(prj.lab)
+set(CMAKE_TOOLCHAIN_FILE "$ENV{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake")
+
+set(OpenCV_DIR "$ENV{HOME}/vcpkg/installed/arm64-osx/share/opencv4")
+set(Protobuf_DIR "$ENV{HOME}/vcpkg/installed/arm64-osx/share/protobuf")
+set(quirc_DIR "$ENV{HOME}/vcpkg/installed/arm64-osx/share/quirc")
+set(TIFF_INCLUDE_DIR "$ENV{HOME}/vcpkg/installed/x64-arm64/include")
+set(TIFF_LIBRARY "$ENV{HOME}/vcpkg/installed/arm64-osx/lib/tiff.lib")
+find_package(OpenCV REQUIRED)
