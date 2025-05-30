@@ -1,0 +1,49 @@
+Image,Region,Mean,StdDev
+Image 1,Background,0.000000,0.000000
+Image 1,Square,188.571406,66.315882
+Image 1,Circle,255.000000,0.000001
+Image 2,Background,20.000000,0.000000
+Image 2,Square,178.952358,55.949806
+Image 2,Circle,235.000000,0.000001
+Image 3,Background,55.000000,0.000000
+Image 3,Square,162.119025,37.809189
+Image 3,Circle,200.000000,0.000001
+Image 4,Background,90.000000,0.000001
+Image 4,Square,145.285692,19.668640
+Image 4,Circle,165.000000,0.000001
+Noisy Image 1 (std=3),Background,1.207641,1.788875
+Noisy Image 1 (std=3),Square,187.994853,65.733249
+Noisy Image 1 (std=3),Circle,253.791807,1.776414
+Noisy Image 2 (std=3),Background,20.028877,3.020450
+Noisy Image 2 (std=3),Square,178.944014,56.022783
+Noisy Image 2 (std=3),Circle,234.979749,2.997966
+Noisy Image 3 (std=3),Background,55.006298,3.001463
+Noisy Image 3 (std=3),Square,162.127256,37.926638
+Noisy Image 3 (std=3),Circle,200.007721,3.014994
+Noisy Image 4 (std=3),Background,90.023045,3.017324
+Noisy Image 4 (std=3),Square,145.298299,19.897746
+Noisy Image 4 (std=3),Circle,165.012437,3.041164
+Noisy Image 1 (std=7),Background,2.818576,4.132415
+Noisy Image 1 (std=7),Square,187.237166,65.145720
+Noisy Image 1 (std=7),Circle,252.245134,4.070057
+Noisy Image 2 (std=7),Background,19.990017,7.020376
+Noisy Image 2 (std=7),Square,178.958299,56.387092
+Noisy Image 2 (std=7),Circle,235.000971,6.947825
+Noisy Image 3 (std=7),Background,55.043572,6.955471
+Noisy Image 3 (std=7),Square,162.127800,38.482266
+Noisy Image 3 (std=7),Circle,200.041241,6.944191
+Noisy Image 4 (std=7),Background,89.992256,6.995369
+Noisy Image 4 (std=7),Square,145.268934,20.870293
+Noisy Image 4 (std=7),Circle,164.973277,6.986551
+Noisy Image 1 (std=15),Background,5.953256,8.702113
+Noisy Image 1 (std=15),Square,185.642086,64.441734
+Noisy Image 1 (std=15),Circle,249.021453,8.774993
+Noisy Image 2 (std=15),Background,20.527757,13.878610
+Noisy Image 2 (std=15),Square,178.552630,57.453667
+Noisy Image 2 (std=15),Circle,234.258264,13.905029
+Noisy Image 3 (std=15),Background,55.016188,14.991659
+Noisy Image 3 (std=15),Square,162.088866,40.567743
+Noisy Image 3 (std=15),Circle,199.831014,14.960619
+Noisy Image 4 (std=15),Background,90.094001,14.886633
+Noisy Image 4 (std=15),Square,145.368027,24.667431
+Noisy Image 4 (std=15),Circle,165.097647,14.807679
