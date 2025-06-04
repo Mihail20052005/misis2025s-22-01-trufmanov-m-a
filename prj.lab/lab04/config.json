@@ -1,0 +1,12 @@
+{
+  "output_path": "C:\\Users\\user\\Desktop\\misis2025s-3-nurgaliev-r-d\\prj.lab\\lab04\\collage",
+  "n": 5,
+  "bg_color": 0,
+  "elps_color": 255,
+  "noise_std": 488,
+  "blur_size": 333,
+  "min_elps_width": 40,
+  "max_elps_width": 120,
+  "min_elps_height": 30,
+  "max_elps_height": 100
+}
