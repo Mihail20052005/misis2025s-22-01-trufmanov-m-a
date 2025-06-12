@@ -116,28 +116,34 @@ double process_image_interactive(const std::string& file_path) {
     double resize_ratio = 500.0 / image.rows;
     cv::Mat resized = opencv_resize(image, resize_ratio);
     plot_rgb(resized, "1. Input image");
+    cv::imwrite("resized.jpg", resized);
 
 
     cv::Mat gray;
     cv::cvtColor(resized, gray, cv::COLOR_BGR2GRAY);
     plot_gray(gray, "2. Gray");
+    cv::imwrite("gray.jpg", gray);
 
 
     cv::Mat blurred;
     cv::GaussianBlur(gray, blurred, cv::Size(15, 15), 3);
     plot_gray(blurred, "3. Blurred");
+    cv::imwrite("blurred.jpg", blurred);
 
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(15, 15));
     cv::morphologyEx(blurred, blurred, cv::MORPH_CLOSE, kernel);
     plot_gray(blurred, "4. Morfologic");
+    cv::imwrite("Morfologic.jpg", blurred);
 
     cv::Mat dilated = dilate_image(blurred, 9);
     plot_gray(dilated, "5. Dilate");
+    cv::imwrite("Dilate.jpg", dilated);
 
 
     cv::Mat edged;
     cv::Canny(dilated, edged, 50, 125, 3);
     plot_gray(edged, "6. Edge");
+    cv::imwrite("Edged.jpg", edged);
 
     std::vector<std::vector<cv::Point>> contours;
     std::vector<cv::Vec4i> hierarchy;
@@ -177,6 +183,7 @@ double process_image_interactive(const std::string& file_path) {
         cv::putText(image_with_largest_contour, angle_text, center, cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(255, 0, 255), 2);
 
         plot_rgb(image_with_largest_contour, "7. With angle");
+        cv::imwrite("With_angle.jpg", image_with_largest_contour);
 
         return angle;
     } else {

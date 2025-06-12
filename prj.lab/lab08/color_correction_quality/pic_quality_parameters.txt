@@ -1,0 +1,11 @@
+Quality parameters for: pic
+
+=== Gray World Correction ===
+MSE:  525.665
+PSNR: 20.9237 dB
+SSIM: 0.813144
+
+=== CLAHE Correction ===
+MSE:  613.75
+PSNR: 20.2509 dB
+SSIM: 0.623821

@@ -16,14 +16,12 @@ struct ImageData {
     std::vector<Polygon> polygons;
 };
 
-// Функция для вычисления угла поворота прямоугольника
 float calculate_rotation_angle(const std::vector<Point2f>& points) {
     if (points.size() < 4) return 0.0f;
 
     RotatedRect rect = minAreaRect(points);
     float angle = rect.angle;
 
-    // Корректировка угла для диапазона [0, 180)
     if (angle < -45.0) {
         angle += 90.0;
     } else if (angle > 45.0) {
@@ -84,7 +82,6 @@ int main() {
     std::vector<ImageData> images;
     parse_json(j, images);
 
-    // Обработка каждого полигона
     for (const auto& image : images) {
         std::cout << "Image: " << image.filename << std::endl;
 
