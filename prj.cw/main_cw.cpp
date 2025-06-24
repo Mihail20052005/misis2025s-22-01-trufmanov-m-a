@@ -126,22 +126,22 @@ double process_image_interactive(const std::string& file_path) {
 
 
     cv::Mat blurred;
-    cv::GaussianBlur(gray, blurred, cv::Size(15, 15), 3);
+    cv::GaussianBlur(gray, blurred, cv::Size(1, 1), 3);
     plot_gray(blurred, "3. Blurred");
     cv::imwrite("blurred.jpg", blurred);
 
-    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(15, 15));
+    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(10, 10));
     cv::morphologyEx(blurred, blurred, cv::MORPH_CLOSE, kernel);
     plot_gray(blurred, "4. Morfologic");
     cv::imwrite("Morfologic.jpg", blurred);
 
-    cv::Mat dilated = dilate_image(blurred, 9);
+    cv::Mat dilated = dilate_image(blurred, 3);
     plot_gray(dilated, "5. Dilate");
     cv::imwrite("Dilate.jpg", dilated);
 
 
     cv::Mat edged;
-    cv::Canny(dilated, edged, 50, 125, 3);
+    cv::Canny(dilated, edged, 30, 90, 3);
     plot_gray(edged, "6. Edge");
     cv::imwrite("Edged.jpg", edged);
 

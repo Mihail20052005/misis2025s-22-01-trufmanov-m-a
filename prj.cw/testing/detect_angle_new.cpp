@@ -27,7 +27,7 @@ float calculate_rotation_angle(const std::vector<Point2f>& points) {
     } else if (angle > 45.0) {
         angle -= 90.0;
     }
-
+    if (angle < 0) angle *= -1;
     return angle;
 }
 
@@ -89,7 +89,7 @@ int main() {
             const auto& polygon = image.polygons[i];
             float angle = calculate_rotation_angle(polygon.points);
 
-            std::cout << "  Polygon " << i+1 << " rotation angle: "
+            std::cout << "  Conture " << i+1 << " rotation angle: "
                       << angle << " degrees" << std::endl;
 
 

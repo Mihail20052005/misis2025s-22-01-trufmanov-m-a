@@ -1,5 +1,12 @@
-Filename,Angle (degrees)
-IMG_4198.JPG,-38.007
-IMG_4199.JPG,-1.8183
-IMG_4197.JPG,-43.301
-IMG_4196.JPG,63.4349
+Image: IMG_4197.JPG
+  Conture 1 rotation angle: 42.9135 degrees
+Image: IMG_4198.JPG
+  Conture 1 rotation angle: 40.2762 degrees
+Image: IMG_4199.JPG
+  Conture 1 rotation angle: 3.6278 degrees
+Image: IMG_4200.JPG
+  Conture 1 rotation angle: 34.1853 degrees
+
+
+
+
